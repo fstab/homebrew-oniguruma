@@ -6,6 +6,7 @@ class Oniguruma596 < Formula
 
   conflicts_with "oniguruma", :because => "another version of Oniguruma is already installed"
 
+#  # Commented out, because pre-built brew downloads are no longer available.
 #  bottle do
 #    cellar :any
 #    revision 1
