@@ -17,6 +17,7 @@ class Oniguruma692 < Formula
   def install
     system "./configure", "--disable-dependency-tracking", "--prefix=#{prefix}"
     system "make", "install"
+    lib.install_symlink lib/"libonig.a"
   end
 
   test do
